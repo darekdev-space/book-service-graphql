@@ -1,0 +1,28 @@
+{
+  "name": "book-service-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon dist/index.js",
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darekdev-space/book-service-graphql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darekdev-space/book-service-graphql/issues"
+  },
+  "homepage": "https://github.com/darekdev-space/book-service-graphql#readme",
+  "dependencies": {
+    "@types/node": "14.14.34",
+    "nodemon": "2.0.7",
+    "ts-node": "9.1.1",
+    "typescript": "4.2.3"
+  }
+}
