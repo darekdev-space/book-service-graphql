@@ -1,0 +1,48 @@
+{
+    "env": {
+        "commonjs": true,
+        "es6": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "extends": ["airbnb", "eslint:recommended"],
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    },
+    "rules": {
+        "import/extensions": "off",
+        "indent": ["warn", 4, {"SwitchCase": 1}],
+        "comma-style": ["error", "last"],
+        "max-len": [2, 120, 4, {"ignoreUrls": true}],
+        "array-bracket-spacing": ["error", "never"],
+        "linebreak-style": 0,
+        "array-callback-return": "error",
+        "comma-spacing": [
+            "error",
+            {
+                "after": true,
+                "before": false
+            }
+        ],
+        "object-curly-spacing": ["error", "never"],
+        "object-curly-newline": "error",
+        "comma-dangle": "off",
+        "brace-style": ["error", "1tbs"],
+        "arrow-body-style": "off",
+        "arrow-parens": ["error", "as-needed", {"requireForBlockBody": true}],
+        "arrow-spacing": [
+            "error",
+            {
+                "after": true,
+                "before": true
+            }
+        ],
+        "no-multi-spaces": "error",
+        "no-whitespace-before-property": "error",
+        "object-shorthand": "error",
+        "no-useless-constructor": "error"
+    }
+}

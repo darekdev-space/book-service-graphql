@@ -1,10 +1,11 @@
-import express, { Express } from "express";
-import { PORT } from "./constans";
+import express, {Application} from 'express';
+
+import {PORT} from './constans';
 
 class App {
-    public server: Express = express();
+    public server: Application = express();
 
-    constructor() {}
+    // constructor() {}
 
     run() {
         this.server.listen(PORT, () => {
