@@ -5,6 +5,7 @@ import {buildSchema} from 'type-graphql';
 
 import {PORT} from './constans';
 import HelloResolver from './resolvers/hello';
+import logger from './tools/logger';
 
 class App {
     public server: Application = express();
@@ -29,7 +30,7 @@ class App {
 
     run() {
         this.server.listen(PORT, () => {
-            console.log(`Server starting on port: ${PORT}`);
+            logger.info(`Server starting on port: ${PORT}`);
         });
     }
 }
