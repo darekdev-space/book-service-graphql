@@ -20,6 +20,7 @@
         "array-bracket-spacing": ["error", "never"],
         "linebreak-style": 0,
         "array-callback-return": "error",
+        "class-methods-use-this": "off",
         "comma-spacing": [
             "error",
             {
